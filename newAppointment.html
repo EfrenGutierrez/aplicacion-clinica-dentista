@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MedacDental</title>
+        
+        <link rel="stylesheet" href="build/css/app.css">
+        
+    </head>
+
+    <body class="vertical-grid">
+        <header>
+            <div class="container" id="header__div">
+                <img width="40" height="40" src="https://img.icons8.com/dusk/64/tooth-cracked.png" alt="tooth-cracked"/>
+                <h1>MedacDent</h1>
+            </div>
+        </header>
+
+        <main class="main__newAppointment">
+            <div class="container container__btn btn__volver">
+                <button type="button" class="btn" id="btn_go_back">Volver a inicio</button>
+            </div>
+            <div class="container__form">
+                <form action="new.php">
+                    <fieldset>
+                        <legend>Nueva cita</legend>
+                            <div class="container__grid">
+                                <label for="iNombre">Nombre:</label>
+                                <input type="text" id="iNombre" name="nombre" required>
+                                
+                                <label for="iApellidos">Apellidos:</label>
+                                <input type="text" id="iApellidos" name="apellidos" required>
+                                
+                                <label for="iDni">DNI:</label>
+                                <input type="text" id="iDni" name="dni" size="9" required>
+                                
+                                <label for="iFechaNacimiento">Fecha de nacimiento</label>
+                                <input type="date" id="iFechaNacimiento" name="fechaNacimiento" required>
+
+                                <label for="iFechaCita">fecha de la cita:</label>
+                                <input type="date" id="iFechaCita" name="fechaCita" required>
+
+                                <label for="iHora">Hora de la cita:</label>
+                                <input type="number" id="iHora" name="hora" min="08" max="20" required>
+                                
+                                <label for="iMin">Minutos de la cita:</label>
+                                <input type="number" id="iMin" name="minutos" min="00" max="59" required>
+
+                                <label for="iTel">Telefono:</label>
+                                <input type="tel" id="iTel" name="tel" required>
+                                
+                                <label for="iComentarios">Comentarios</label>
+                                <textarea id="iComentarios" name="comentarios"></textarea>
+                                
+                            </div>
+                        <button type="button" id="btn__enviar" class="container btn btn__enviar">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <h3>Contacto</h3>
+                <p>Tel: 606000000</p>
+                <p>Email: email@email.correo</p>
+            </div>
+        </footer>       
+        
+    </body>
+    <script src="build/js/newAppointment.js"></script>
+</html>

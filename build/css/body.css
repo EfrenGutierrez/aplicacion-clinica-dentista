@@ -1,0 +1,22 @@
+/* 
+    En este css se está alineando verticalmente el body para 
+    utilizar el 100% del documento.
+*/
+.vertical-grid{
+        text-align: center;
+        
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 100dvh;
+
+    
+    
+    
+}
+
+.container{
+    width: min(90%, 1200px);
+    text-align: center;
+    margin: 0 auto;
+    
+}

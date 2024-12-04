@@ -1,0 +1,47 @@
+@import 'variables.css';
+
+main{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.container__btn{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+    @media (min-width:1080px) {
+        flex-direction: row;
+
+    }
+}
+
+.btn{
+    width: 60vw;
+    height: 4rem;
+    font-size: 28px;
+    background-color: var(--secundario);
+    border: 1px solid var(--primario);
+    border-radius: 15px;
+    color: var(--primario);
+    @media (min-width:1080px) {
+        width:20vw;
+
+    }
+    
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-2px) scale(1.02);
+        box-shadow: var(--gris) 2px 2px 5px;
+
+    }
+    
+    
+}

@@ -1,0 +1,27 @@
+@import 'variables.css';
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--primario); 
+    height:6rem;
+    border: 1px solid black;
+}
+
+#header__div{
+    gap: 1rem;
+    @media(min-width: 1080px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        margin: auto;
+        padding: auto;
+        
+    }
+    h1{
+        color: var(--blanco);
+    }
+}
