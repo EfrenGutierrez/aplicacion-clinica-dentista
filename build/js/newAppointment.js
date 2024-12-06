@@ -102,7 +102,7 @@ function enviar(){
             //se convierte el objeto en JSON.
             const citaJSON = JSON.stringify(cita)
             //se crea la cookie
-            document.cookie = cita.dni + "=" + citaJSON + ";expires=Fri, 6 Dec 2024 12:00:00 UTC; path=/";
+            document.cookie = cita.dni + "=" + citaJSON + ";expires=Fri, 6 Dec 2025 12:00:00 UTC; path=/";
          
             
             //funcion que elimina el texto de los <inputs> y del <textarea> tras crear almacenar los datos en la cookie.

@@ -251,7 +251,7 @@ function guardarCambios(){
 
         const jsonCita = JSON.stringify(cita);
 
-        document.cookie= cita.dni + "=" + jsonCita + ";expires=Fri,6 Dec 2024 12:00:00 UTC;path=/";
+        document.cookie= cita.dni + "=" + jsonCita + ";expires=Fri,6 Dec 2025 12:00:00 UTC;path=/";
 
 
     }
